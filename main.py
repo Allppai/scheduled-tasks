@@ -14,7 +14,7 @@ account_sid = os.environ.get("ACCOUNT_SID")
 auth_token = os.environ.get("AUTH_TOKEN")
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "0cce284ec4c36aa5f7d1df8fc8a5e010"
+api_key = os.environ.get("OWM_API_KEY")
 
 parameters = {
     "lat": MY_LAT,
