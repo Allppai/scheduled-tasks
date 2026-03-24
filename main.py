@@ -4,17 +4,18 @@ from twilio.rest import Client
 
 timestamp_list = []
 
-MY_LAT = 52.7391137102 
-MY_LONG = -3.883579799
+MY_LAT = 57.50584
+MY_LONG = -1.79806
 
-my_phone = os.environ.get("MY_PHONE")
-twilio_phone = os.environ.get("TWILIO_PHONE")
 
-account_sid = os.environ.get("ACCOUNT_SID")
-auth_token = os.environ.get("AUTH_TOKEN")
+my_phone = "+48785470298"
+twilio_phone = "+15672294410"
+
+account_sid = "AC18e63bfaefece9bcef93aea0a05079be"
+auth_token = "da559487379f0705ea6f1ddf43331bb7"
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = os.environ.get("OWM_API_KEY")
+api_key = "0cce284ec4c36aa5f7d1df8fc8a5e010"
 
 parameters = {
     "lat": MY_LAT,
@@ -37,8 +38,8 @@ if any(weather_id < 700 for weather_id in timestamp_list):
 
     message = client.messages.create(
         body="It's going to rain! Take umbrella.",
-        from_=twilio_phone,
-        to=my_phone,
+        from_="+15672294410",
+        to="+48785470298",
     )
     print(message.status)
 
