@@ -4,8 +4,8 @@ from twilio.rest import Client
 
 timestamp_list = []
 
-MY_LAT = 57.50584
-MY_LONG = -1.79806
+MY_LAT = 52.7391137102 
+MY_LONG = -3.883579799
 
 my_phone = os.environ.get("MY_PHONE")
 twilio_phone = os.environ.get("TWILIO_PHONE")
