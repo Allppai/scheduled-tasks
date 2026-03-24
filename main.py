@@ -7,9 +7,6 @@ timestamp_list = []
 MY_LAT = 57.50584
 MY_LONG = -1.79806
 
-# MY_LAT = 53.15270757134602
-# MY_LONG = 18.115509930210457
-
 my_phone = os.environ.get("MY_PHONE")
 twilio_phone = os.environ.get("TWILIO_PHONE")
 
