@@ -7,12 +7,14 @@ timestamp_list = []
 MY_LAT = 57.50584
 MY_LONG = -1.79806
 
+# MY_LAT = 53.15270757134602
+# MY_LONG = 18.115509930210457
 
 my_phone = "+48785470298"
 twilio_phone = "+15672294410"
 
 account_sid = "AC18e63bfaefece9bcef93aea0a05079be"
-auth_token = "da559487379f0705ea6f1ddf43331bb7"
+auth_token = "dd8df82210eb5c4cbe4a89e08972e663"
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 api_key = "0cce284ec4c36aa5f7d1df8fc8a5e010"
